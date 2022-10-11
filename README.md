@@ -1,2 +1,2 @@
 # com411
-com 411 lab exercises
+COM 411 - Problem solving through programming
