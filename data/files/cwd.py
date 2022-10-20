@@ -10,6 +10,13 @@ def cwd():
         print(file)
 
 
-cwd()
+def run():
+
+    print("Processing...")
+    cwd()
+
+
+run()
+
 
 
