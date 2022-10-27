@@ -4,7 +4,6 @@ def directions():
 
 
 def menu():
-    print("Please select a direction: ")
     directions_list = directions()
     for item in directions_list:
         print(f"{directions_list.index(item)}: {item}")
