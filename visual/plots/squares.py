@@ -13,9 +13,16 @@ def medium():
     plt.plot(x, y, 'gs--')
 
 
+def large():
+    x = [1, 1, 6, 6, 1]
+    y = [1, 6, 6, 1, 1]
+    plt.plot(x, y, 'bx-')
+
+
 def run():
     small()
     medium()
+    large()
     plt.show()
 
 
