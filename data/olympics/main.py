@@ -21,7 +21,9 @@ def run():
     while True:
         selection = tui.menu()
         if selection == "years":
-            pass
+            tui.started("listing all the years with olympic years.")
+            process.list_years(athlete_data)
+            tui.completed()
         elif selection == "tally":
             pass
         elif selection == "team":
