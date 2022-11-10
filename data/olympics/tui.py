@@ -2,13 +2,13 @@ import csv
 
 
 def started(msg=""):
-    print(["-"]*85)
+    print("-"*85)
     print(f"Operation started:{msg}...")
 
 
 def completed():
     print("\nOperation Completed")
-    print(["-"]*85)
+    print("-"*85)
 
 
 def error(msg):
