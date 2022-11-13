@@ -2,13 +2,13 @@ import csv
 
 
 def started(msg=""):
-    print("-"*85)
+    print("-" * 85)
     print(f"Operation started:{msg}...")
 
 
 def completed():
     print("\nOperation Completed")
-    print("-"*85)
+    print("-" * 85)
 
 
 def error(msg):
@@ -26,13 +26,13 @@ def menu():
 
 
 def display_medal_tally(tally):
-    for medal,amount in tally.items():
+    for medal, amount in tally.items():
         print(f"|{medal:10}|{amount:<10}|")
 
 
 def display_team_medal_tally(team_tally):
     for team, data in team_tally.items():
-        print(f"{team}\n\t",end="")
+        print(f"{team}\n\t", end="")
         medals_string = ""
         for medal, amount in data.items():
             if medals_string != "":
@@ -45,4 +45,3 @@ def display_years(years):
     ascending = sorted(years, reverse=True)
     for year in ascending:
         print(year)
-
