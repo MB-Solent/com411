@@ -1,4 +1,6 @@
 import tui
+
+
 def list_years(data):
     years = set()
     for row in data:
