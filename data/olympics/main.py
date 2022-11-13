@@ -25,9 +25,13 @@ def run():
             process.list_years(athlete_data)
             tui.completed()
         elif selection == "tally":
-            pass
+            tui.started("tallying up all medals.")
+            process.tally_medals(athlete_data)
+            tui.completed()
         elif selection == "team":
-            pass
+            tui.started("tallying up all medals for each individual country.")
+            process.tally_team_medals(athlete_data)
+            tui.completed()
         elif selection == "exit":
             break
         else:

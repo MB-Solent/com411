@@ -19,7 +19,7 @@ def menu():
     print("Please Select one of the following options.")
     print(f"{'[years]':10}List unique years")
     print(f"{'[tally]':10}Tally up medals")
-    print(f"{'[ctally]':10}Tally up medals for each team")
+    print(f"{'[team]':10}Tally up medals for each team")
     print(f"{'[exit]':10}Exit the program")
     selection = input("Your Selection:")
     return selection
@@ -27,7 +27,7 @@ def menu():
 
 def display_medal_tally(tally):
     for medal,amount in tally.items():
-        print(f"|{medal:10}|{amount:10}|")
+        print(f"|{medal:10}|{amount:<10}|")
 
 
 def display_team_medal_tally(team_tally):
